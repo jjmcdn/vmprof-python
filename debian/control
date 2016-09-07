@@ -1,0 +1,78 @@
+Source: vmprof-python
+Section: python
+Priority: optional
+Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Uploaders: Stefano Rivera <stefanor@debian.org>
+Vcs-Browser: https://anonscm.debian.org/git/python-modules/packages/vmprof-python.git
+Vcs-Git: https://anonscm.debian.org/git/python-modules/packages/vmprof-python.git
+Homepage: https://vmprof.readthedocs.org/
+Build-Depends:
+ debhelper (>= 9),
+ dh-python (>= 1.20130901),
+ pypy,
+ pypy-backports.shutil-which,
+ pypy-setuptools,
+ pypy-six,
+ python-all-dev,
+ python-all-dbg,
+ python-backports.shutil-which,
+ python-requests,
+ python-setuptools,
+ python-six,
+ python3-all-dev (>= 3.5),
+ python3-all-dbg,
+ python3-requests,
+ python3-setuptools,
+ python3-six
+# Not currently available: pypy-requests,
+Standards-Version: 3.9.8
+
+Package: python-vmprof
+Architecture: any
+Depends: ${misc:Depends}, ${python:Depends}, ${shlibs:Depends}
+Description: Python's vmprof client
+ vmprof is a platform to understand and resolve performance bottlenecks in your
+ code. It includes a lightweight profiler for CPython 2.7, CPython 3 and PyPy
+ and an assembler log visualizer for PyPy.
+ .
+ This package contains the vmprof client for CPython 2.7.
+
+Package: python-vmprof-dbg
+Architecture: any
+Depends: ${misc:Depends}, ${python:Depends}, ${shlibs:Depends}
+Description: Python's vmprof client (debug build)
+ vmprof is a platform to understand and resolve performance bottlenecks in your
+ code. It includes a lightweight profiler for CPython 2.7, CPython 3 and PyPy
+ and an assembler log visualizer for PyPy.
+ .
+ This package contains the vmprof client for CPython 2.7 (debug build)
+
+Package: python3-vmprof
+Architecture: any
+Depends: ${misc:Depends}, ${python3:Depends}, ${shlibs:Depends}
+Description: Python 3's vmprof client
+ vmprof is a platform to understand and resolve performance bottlenecks in your
+ code. It includes a lightweight profiler for CPython 2.7, CPython 3 and PyPy
+ and an assembler log visualizer for PyPy.
+ .
+ This package contains the vmprof client for CPython 3.
+
+Package: python3-vmprof-dbg
+Architecture: any
+Depends: ${misc:Depends}, ${python3:Depends}, ${shlibs:Depends}
+Description: Python 3's vmprof client (debug build)
+ vmprof is a platform to understand and resolve performance bottlenecks in your
+ code. It includes a lightweight profiler for CPython 2.7, CPython 3 and PyPy
+ and an assembler log visualizer for PyPy.
+ .
+ This package contains the vmprof client for CPython 3 (debug build).
+
+Package: pypy-vmprof
+Architecture: all
+Depends: ${misc:Depends}, ${pypy:Depends}, pypy (>= 2.6)
+Description: PyPy's vmprof client
+ vmprof is a platform to understand and resolve performance bottlenecks in your
+ code. It includes a lightweight profiler for CPython 2.7, CPython 3 and PyPy
+ and an assembler log visualizer for PyPy.
+ .
+ This package contains the vmprof client for PyPy.
