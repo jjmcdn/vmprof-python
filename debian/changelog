@@ -1,5 +1,9 @@
 vmprof-python (0.3.12-1) UNRELEASED; urgency=medium
 
+  [ Stefano Rivera ]
   * Initial release. (Closes: #XXXXXX)
+
+  [ Ondřej Nový ]
+  * d/control: Set Vcs-* to salsa.debian.org
 
  -- Stefano Rivera <stefanor@debian.org>  Wed, 07 Sep 2016 11:37:14 -0700

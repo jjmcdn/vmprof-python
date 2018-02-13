@@ -3,8 +3,8 @@ Section: python
 Priority: optional
 Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
 Uploaders: Stefano Rivera <stefanor@debian.org>
-Vcs-Browser: https://anonscm.debian.org/git/python-modules/packages/vmprof-python.git
-Vcs-Git: https://anonscm.debian.org/git/python-modules/packages/vmprof-python.git
+Vcs-Browser: https://salsa.debian.org/python-team/modules/vmprof-python
+Vcs-Git: https://salsa.debian.org/python-team/modules/vmprof-python.git
 Homepage: https://vmprof.readthedocs.org/
 Build-Depends:
  debhelper (>= 9),
