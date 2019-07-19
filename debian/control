@@ -7,7 +7,7 @@ Vcs-Browser: https://salsa.debian.org/python-team/modules/vmprof-python
 Vcs-Git: https://salsa.debian.org/python-team/modules/vmprof-python.git
 Homepage: https://vmprof.readthedocs.org/
 Build-Depends:
- debhelper (>= 9),
+ debhelper-compat (= 9),
  dh-python (>= 1.20130901),
  pypy,
  pypy-backports.shutil-which,
