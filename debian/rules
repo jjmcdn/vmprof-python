@@ -3,4 +3,7 @@
 export PYBUILD_NAME=vmprof
 
 %:
-	dh $@ --with python2,python3,pypy --buildsystem pybuild
+	dh $@ --with python3 --buildsystem pybuild
+
+override_dh_auto_test:
+
